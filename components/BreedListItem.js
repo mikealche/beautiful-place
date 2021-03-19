@@ -20,10 +20,10 @@ export const BreedListItem = ({ breed }) => {
     <Link href={`/breed/${breed}`}>
       <Col md={6}>
         <Row className="p-3 m-3 border rounded" style={{ cursor: "pointer" }}>
-          <Col xs="4" style={{ overflow: "hidden" }}>
+          <Col xs="5" style={{ overflow: "hidden" }}>
             <BreedSampleImage breed={breed} />
           </Col>
-          <Col xs="4" className="my-auto">
+          <Col xs="7" className="my-auto">
             <h2>{breed}</h2>
           </Col>
         </Row>
