@@ -7,14 +7,14 @@ import { BreedImagesList } from "../../components/BreedImagesList";
 
 export default function BreedDetail() {
   const router = useRouter();
-  const { breedName } = router.query;
+  const { breed } = router.query;
 
   return (
     <Layout>
       <Col xs="12">
-        <Title> 🐶 {breedName} 🐶</Title>
+        <Title> 🐶 {breed} 🐶</Title>
       </Col>
-      <BreedImagesList breedName={breedName} />
+      <BreedImagesList breed={breed} />
     </Layout>
   );
 }

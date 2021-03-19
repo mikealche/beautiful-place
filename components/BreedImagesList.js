@@ -4,8 +4,8 @@ import { useBreedImages } from "../lib/api";
 import { useAwesomeness } from "../contexts/Awesomeness";
 import PettingsCounter from "./PettingsCounter";
 
-export const BreedImagesList = ({ breedName }) => {
-  const { data, error } = useBreedImages(breedName);
+export const BreedImagesList = ({ breed }) => {
+  const { data, error } = useBreedImages(breed);
 
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
