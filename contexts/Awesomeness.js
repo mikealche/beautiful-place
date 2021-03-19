@@ -7,12 +7,12 @@ export const AwesomenessProvider = ({ children }) => {
   const confetti = useRef(null);
   const celebrate = (e) => {
     confetti.current({
-      particleCount: 500,
+      particleCount: 200,
       origin: {
         x: e.clientX / window.innerWidth,
         y: e.clientY / window.innerHeight,
       },
-      spread: 360,
+      spread: Math.random() * 500,
     });
   };
 

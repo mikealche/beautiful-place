@@ -7,7 +7,8 @@ export default function Home() {
   return (
     <Layout>
       <Col xs={12}>
-        <Title>The Most Beautiful Place on Earth</Title>
+        <Title>The Most Beautiful Place on Earth </Title>
+        <Title>🦮 🐕‍🦺 🐕 🐩 </Title>
       </Col>
       <Col>
         <BreedsList />

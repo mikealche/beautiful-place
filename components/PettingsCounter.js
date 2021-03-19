@@ -13,8 +13,10 @@ export default function PettingsCounter({ url, children }) {
   return (
     <div onClick={handlePet}>
       {children}
-      <div>
-        Petted {timesPetted} {timesPetted > 1 ? "times" : "time"}
+      <div className="pt-3">
+        <p className="font-weight-bold lead">
+          Petted {timesPetted} {timesPetted !== 1 ? "times" : "time"} 🤚
+        </p>
       </div>
     </div>
   );

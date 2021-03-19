@@ -7,20 +7,22 @@ const BreedListItem = ({ breed }) => {
   const sampleImage = data?.data?.message?.[0];
   return (
     <Link href={`/breed/${breed}`}>
-      <Row className="p-3 m-3 border rounded" style={{ cursor: "pointer" }}>
-        {sampleImage && (
-          <Col xs="4" sm="2" style={{ overflow: "hidden" }}>
-            <img
-              src={sampleImage}
-              className="rounded"
-              style={{ height: 150, width: 150, objectFit: "cover" }}
-            />
+      <Col md={6}>
+        <Row className="p-3 m-3 border rounded" style={{ cursor: "pointer" }}>
+          {sampleImage && (
+            <Col xs="4" style={{ overflow: "hidden" }}>
+              <img
+                src={sampleImage}
+                className="rounded"
+                style={{ height: 150, width: 150, objectFit: "cover" }}
+              />
+            </Col>
+          )}
+          <Col xs="4" className="my-auto">
+            <h2>{breed}</h2>
           </Col>
-        )}
-        <Col xs="6" className="my-auto">
-          <h2>{breed}</h2>
-        </Col>
-      </Row>
+        </Row>
+      </Col>
     </Link>
   );
 };
@@ -32,9 +34,11 @@ export const BreedsList = () => {
   const breeds = data.data.message;
   return (
     <>
-      {Object.keys(breeds).map((breed) => (
-        <BreedListItem key={breed} breed={breed} />
-      ))}
+      <Row>
+        {Object.keys(breeds).map((breed) => (
+          <BreedListItem key={breed} breed={breed} />
+        ))}
+      </Row>
     </>
   );
 };
