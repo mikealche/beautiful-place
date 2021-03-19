@@ -7,11 +7,7 @@ const BreedListItem = ({ breed }) => {
   const sampleImage = data?.data?.message?.[0];
   return (
     <Link href={`/breed/${breed}`}>
-      <Row
-        key={breed}
-        className="p-3 m-3 border "
-        style={{ cursor: "pointer" }}
-      >
+      <Row className="p-3 m-3 border" style={{ cursor: "pointer" }}>
         {sampleImage && (
           <Col xs="2">
             <img src={sampleImage} class="img-fluid" />
