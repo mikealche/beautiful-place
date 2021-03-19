@@ -7,10 +7,14 @@ const BreedListItem = ({ breed }) => {
   const sampleImage = data?.data?.message?.[0];
   return (
     <Link href={`/breed/${breed}`}>
-      <Row className="p-3 m-3 border" style={{ cursor: "pointer" }}>
+      <Row className="p-3 m-3 border rounded" style={{ cursor: "pointer" }}>
         {sampleImage && (
-          <Col xs="2">
-            <img src={sampleImage} class="img-fluid" />
+          <Col xs="4" sm="2" style={{ overflow: "hidden" }}>
+            <img
+              src={sampleImage}
+              className="rounded"
+              style={{ height: 150, width: 150, objectFit: "cover" }}
+            />
           </Col>
         )}
         <Col xs="6" className="my-auto">

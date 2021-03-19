@@ -35,7 +35,13 @@ export const BreedImagesList = ({ breedName }) => {
         refConfetti={(refVal) => (confetti.current = refVal)}
       />
       {images.map((imageUrl) => (
-        <Col key={imageUrl} xs={4} className="p-5 border" onClick={celebrate}>
+        <Col
+          key={imageUrl}
+          xs={12}
+          md={4}
+          className="p-5 border"
+          onClick={celebrate}
+        >
           <img src={imageUrl} alt="" className="img-fluid" />
         </Col>
       ))}
