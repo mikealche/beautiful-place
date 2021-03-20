@@ -10,9 +10,9 @@ export default function PettingsCounter({ url, children, breed, position }) {
   const wantsPetting = useTrackWhoHasBeenPetted({ breed, position }); // Uses redux
 
   const handlePet = (e) => {
-    setTimesPetted(timesPetted + 1);
-    store.dispatch(pet({ breed, position }));
-    celebrate(e);
+    setTimesPetted(timesPetted + 1); // Simple localstorage state
+    store.dispatch(pet({ breed, position })); // Redux
+    celebrate(e); // React Context
   };
 
   return (
