@@ -18,8 +18,11 @@ const BreedSampleImage = ({ breed }) => {
 export const BreedListItem = ({ breed }) => {
   return (
     <Link href={`/breed/${breed}`}>
-      <Col md={6}>
-        <Row className="p-3 m-3 border rounded" style={{ cursor: "pointer" }}>
+      <Col md="6">
+        <Row
+          className="p-3 m-3 border rounded shadow-sm"
+          style={{ cursor: "pointer" }}
+        >
           <Col xs="5" style={{ overflow: "hidden" }}>
             <BreedSampleImage breed={breed} />
           </Col>
