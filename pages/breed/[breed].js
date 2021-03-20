@@ -2,8 +2,8 @@ import React from "react";
 import { useRouter } from "next/router";
 import { Col } from "react-bootstrap";
 import Layout from "../../components/Layout";
-import Title from "../../components/Title";
 import { BreedImagesList } from "../../components/BreedImagesList";
+import { Title } from "../../components/TextUtils";
 
 export default function BreedDetail() {
   const router = useRouter();
