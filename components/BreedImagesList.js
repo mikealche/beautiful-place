@@ -17,7 +17,11 @@ export const BreedImagesList = ({ breed }) => {
       {images.map((imageUrl, index) => (
         <Col key={imageUrl} xs={12} md={4} className="p-5 border">
           <PettingsCounter url={imageUrl} position={index} breed={breed}>
-            <img src={imageUrl} alt="" className="img-fluid" />
+            <img
+              src={imageUrl}
+              className="rounded"
+              style={{ height: 300, width: 300, objectFit: "cover" }}
+            />
           </PettingsCounter>
         </Col>
       ))}
