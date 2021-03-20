@@ -16,7 +16,7 @@ export default function PettingsCounter({ url, children, breed, position }) {
   };
 
   return (
-    <div onClick={handlePet}>
+    <div onClick={handlePet} style={{ cursor: "pointer" }}>
       {children}
       <div className="pt-3">
         <p className="font-weight-bold lead">

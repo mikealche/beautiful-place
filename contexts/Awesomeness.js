@@ -7,7 +7,7 @@ export const AwesomenessProvider = ({ children }) => {
   const confetti = useRef(null);
   const celebrate = (e) => {
     confetti.current({
-      particleCount: 100,
+      particleCount: 200,
       origin: {
         x: e.clientX / window.innerWidth,
         y: e.clientY / window.innerHeight,

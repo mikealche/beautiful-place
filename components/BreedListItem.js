@@ -27,7 +27,13 @@ export const BreedListItem = ({ breed }) => {
             <BreedSampleImage breed={breed} />
           </Col>
           <Col xs="7" className="my-auto">
-            <h2>{breed}</h2>
+            <h2 className="breed-title">{breed} </h2>
+            <style jsx>{`
+              .breed-title:hover {
+                text-decoration: underline wavy deepskyblue;
+                transition: 0.1s all ease-in;
+              }
+            `}</style>
           </Col>
         </Row>
       </Col>
