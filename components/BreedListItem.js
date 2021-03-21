@@ -3,9 +3,9 @@ import { useBreedImages } from "../lib/api";
 import Link from "next/link";
 
 const BreedSampleImage = ({ breed }) => {
-  const { data } = useBreedImages(breed);
-  const sampleImage = data?.data?.message?.[0];
-  if (!sampleImage) return null;
+  const { images, error } = useBreedImages(breed);
+  const sampleImage = images?.[0];
+  if (error || !sampleImage) return null;
   return (
     <img
       src={sampleImage}

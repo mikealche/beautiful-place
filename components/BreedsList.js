@@ -3,11 +3,10 @@ import { useBreeds } from "../lib/api";
 import { BreedListItem } from "./BreedListItem";
 
 export const BreedsList = () => {
-  const { data, error } = useBreeds();
+  const { breeds, isLoading, error } = useBreeds();
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>loading...</div>;
-  const breeds = data.data.message;
+  if (isLoading) return <div>loading...</div>;
 
   return (
     <Row>
