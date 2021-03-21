@@ -1,7 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Col } from "react-bootstrap";
 import { useBreedImages } from "../lib/api";
-import { useAwesomeness } from "../contexts/Awesomeness";
 import PettingsCounter from "./PettingsCounter";
 
 export const BreedImagesList = ({ breed }) => {
