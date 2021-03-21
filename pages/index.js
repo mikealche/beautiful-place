@@ -8,7 +8,7 @@ export default function Home() {
     <Layout>
       <Col xs="12">
         <Title>
-          Welcome to the Dog's <CoolText>Petting Center </CoolText>
+          Welcome to the Dogs' <CoolText>Petting Center </CoolText>
         </Title>
         <Title>🦮 🐕‍🦺 🐕 🐩 </Title>
       </Col>

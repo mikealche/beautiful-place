@@ -30,8 +30,7 @@ export const BreedListItem = ({ breed }) => {
             <h2 className="breed-title">{breed} </h2>
             <style jsx>{`
               .breed-title:hover {
-                text-decoration: underline wavy deepskyblue;
-                transition: 0.1s all ease-in;
+                text-decoration: underline wavy hotpink;
               }
             `}</style>
           </Col>

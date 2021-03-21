@@ -12,7 +12,7 @@ export default function BreedDetail() {
   return (
     <Layout>
       <Col xs="12">
-        <Title> 🐶 {breed} 🐶</Title>
+        <Title>🐶 {breed} 🐶</Title>
       </Col>
       <BreedImagesList breed={breed} />
     </Layout>
